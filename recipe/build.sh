@@ -8,6 +8,7 @@ cd build
 cmake .. \
     -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
     -DCMAKE_INSTALL_LIBDIR="${PREFIX}/lib" \
+    -DCMAKE_C_FLAGS="${CMAKE_C_FLAGS} -fPIC" \
     -Denable_blaslib=OFF \
     -Denable_single=ON \
     -Denable_double=ON \
@@ -15,7 +16,7 @@ cmake .. \
     -Denable_complex=ON \
     -Denable_tests=ON \
     -Denable_doc=OFF \
-    -Denable_matlab_mex=OFF \
+    -Denable_matlab_mex=OFF
 
 make
 make test
