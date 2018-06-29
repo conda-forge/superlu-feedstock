@@ -16,14 +16,16 @@ equations.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/superlu-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/superlu-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/superlu-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/superlu-feedstock)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/superlu-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/superlu-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/superlu-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/superlu-feedstock)
+![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/superlu/badges/version.svg)](https://anaconda.org/conda-forge/superlu)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/superlu/badges/downloads.svg)](https://anaconda.org/conda-forge/superlu)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-superlu-green.svg)](https://anaconda.org/conda-forge/superlu) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/superlu.svg)](https://anaconda.org/conda-forge/superlu) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/superlu.svg)](https://anaconda.org/conda-forge/superlu) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/superlu.svg)](https://anaconda.org/conda-forge/superlu) |
 
 Installing superlu
 ==================
@@ -68,6 +70,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
