@@ -12,7 +12,7 @@ source:
     sha256: 28fb66d6107ee66248d5cf508c79de03d0621852a0ddeba7301801d3d859f463
 
 build:
-  number: 203
+  number: 1203
   skip: True  # [win]
   features:
     - blas_{{ variant }}
