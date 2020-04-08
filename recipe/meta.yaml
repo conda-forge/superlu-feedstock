@@ -11,7 +11,7 @@ source:
     sha256: 28fb66d6107ee66248d5cf508c79de03d0621852a0ddeba7301801d3d859f463
 
 build:
-  number: 1206
+  number: 1207
   skip: True  # [win]
   features:
 
@@ -20,6 +20,7 @@ requirements:
     - cmake
     - {{ compiler('fortran') }}
     - {{ compiler('c') }}
+    - make
   host:
     - libblas
     - libcblas
@@ -31,7 +32,7 @@ test:
 
 about:
     home: http://crd-legacy.lbl.gov/~xiaoye/SuperLU/
-    license: BSD 3-clause
+    license: BSD-3-Clause
     license_file: License.txt
     summary: |
       Supernodal LU: solvers for large, sparse, nonsymmetric systems of linear
