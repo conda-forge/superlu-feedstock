@@ -7,6 +7,7 @@ cmake ${CMAKE_ARGS} .. \
     -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
     -DCMAKE_INSTALL_LIBDIR="${PREFIX}/lib" \
     -DBUILD_SHARED_LIBS=ON \
+    -DTPL_BLAS_LIBRARIES="blas;cblas" \
     -Denable_internal_blaslib=OFF \
     -Denable_tests=ON \
     -Denable_examples=OFF \
