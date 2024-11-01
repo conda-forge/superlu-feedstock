@@ -14,6 +14,6 @@ cmake ${CMAKE_ARGS} .. \
 
 make -j"${CPU_COUNT:-1}"
 if [[ "${CONDA_BUILD_CROSS_COMPILATION}" != "1" ]]; then
-make test
+  ctest --output-on-failure
 fi
 make install
