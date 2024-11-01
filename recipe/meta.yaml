@@ -12,7 +12,8 @@ source:
 build:
   number: 0
   skip: true  # [win]
-  features:
+  run_exports:
+    - {{ pin_subpackage("superlu", max_pin="x.x") }}
 
 requirements:
   build:
