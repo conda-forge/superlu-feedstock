@@ -1,4 +1,4 @@
-{% set version = "7.0.0" %}
+{% set version = "7.0.1" %}
 
 
 package:
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/xiaoyeli/superlu/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: d7b91d4e0bb52644ca74c1a4dd466a694ddf1244a7bbf93cb453e8ca1f6527eb
+  sha256: a24fcbdf7efa455bf272f63e7bc4ddeced9bfcecb69ce6ddffd12360d43bed3c
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
   run_exports:
     - {{ pin_subpackage("superlu", max_pin="x.x") }}
