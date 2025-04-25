@@ -26,6 +26,7 @@ requirements:
     - make
   host:
     - libblas
+    - libcblas
   run_exports:
     - ${{ pin_subpackage("superlu", upper_bound="x.x") }}
 
