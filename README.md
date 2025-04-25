@@ -10,7 +10,6 @@ Package license: BSD-3-Clause
 Summary: Supernodal LU: solvers for large, sparse, nonsymmetric systems of linear
 equations.
 
-
 Current build status
 ====================
 
